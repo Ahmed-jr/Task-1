@@ -1,0 +1,249 @@
+:root{
+    --main-color:#d35400;
+    --sec-color:#353b48;
+    --white:#f5f6fa;
+    --font-size: 1rem;
+}
+body{
+    background-color: var(--sec-color);
+}
+*{
+    /* font-family: 'Mochiy Pop P One', sans-serif; */
+}
+header{
+    background-image: url(../img/slide-1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-color: rgba(45, 52, 54,0.8);
+    background-blend-mode: multiply;
+}
+/* start navbar */
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--main-color);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--white);
+}
+.navbar-light .navbar-brand{
+    color: var(--white);
+}
+.navbar-light .navbar-brand span{
+    color: var(--main-color);
+}
+.navbar-light .navbar-nav .nav-link.icon{
+    color: var(--main-color);
+}
+/* end navbar */
+/* start slider */
+header .slider .heading,
+header .slider .caption{
+    color: var(--white);
+}
+header .slider .heading{
+    font-size: calc( var(--font-size) + 1.5rem);
+}
+header .slider .caption{
+    font-size: calc( var(--font-size));
+}
+header .slider .heading span{
+    color: var(--main-color);
+}
+header .slider .career{
+    border: 1px solid var(--white);
+    color: var(--white);
+    width: 25%;
+    padding: 1% 3%;
+    border-radius: 15px;
+}
+header .slider .career:hover{
+    transition: all ease-in-out 0.6s;
+    background-color: var(--main-color);
+}
+/* end slider */
+/* start service */
+#service{
+    padding-top: 5%;
+}
+#service .icon{
+    color: var(--main-color);
+    border: 2px solid var(--sec-color);
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+}
+/* end service */
+/* start our-work */
+.parent{
+    padding-top: 5%;
+    margin: 0 auto;
+    text-align: center;
+}
+.parent h3{
+    font-size: 3rem;
+}
+.parent p{
+    font-size: 1.25rem;
+}
+.parent .child span{
+    color: var(--main-color);
+}
+.parent img{
+    width: 100%;
+    height: 100%;
+}
+.parent .btn{
+    text-transform: uppercase;
+    border: 1px solid var(--sec-color);
+    color: var(--sec-color);
+    padding: 1% 3%;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+.parent .btn:hover{
+    transition: all ease-in-out 0.6s;
+    background-color: var(--main-color);
+}
+/* end our-work */
+/* start our-team */
+.body{
+    padding-top: 5%;
+    margin: 0;
+    text-align: center;
+}
+.body h4{
+    font-size: 3rem;
+}
+.body p{
+    font-size: 1.25rem;
+}
+.body img{
+    filter: grayscale(100%);
+    height: 30vh;
+}
+.body img:hover{
+    transform: all 0.6 ease-in-out;
+    filter: grayscale(0);
+}
+.body .slide span{
+    color: var(--main-color);
+}
+.body p{
+    text-align: center;
+    width: 100%;
+}
+.body .row h3{
+    text-transform: uppercase;
+}
+.body .row .icon{
+    color: var(--white);
+    border: 2px solid var(--sec-color);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: var(--sec-color);
+}
+.body img:hover ~ .icon.facebook , .contact .facebook-icon{
+color: #1877f2;
+}
+.body img:hover ~ .icon.twitter , .contact .twitter-icon{
+color: #1da1f2;
+}
+.body img:hover ~ .icon.youtube , .contact .youtube-icon{
+color: #ff0000;
+}
+.body img:hover ~ .icon.google , .contact .google-icon{
+color: #34a853;
+}
+/* end our-team */
+/* start say-hello */
+.contact {
+    background-image: url(../img/contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 6%;
+    z-index: 0;
+}
+.overlay{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(48, 55, 61,0.9);
+    z-index: -1;
+}
+.contact h2{
+    font-size: 3rem;
+    color: var(--white);
+}
+.contact span{
+    color: var(--main-color);
+}
+.contact p{
+    font-size: 1.25rem;
+    color: var(--white);
+}
+.contact input , .contact textarea{
+    background-color: transparent;
+    margin-bottom: 3%;
+    border-radius: 15px;
+    padding: 1%;
+}
+.contact button{
+    border: 1px solid var(--main-color);
+    color: var(--white);
+    padding: 1%;
+    background-color: var(--main-color);
+    border-radius: 15px;
+    width: 8%;
+}
+.contact .row .facebook-icon{
+    color: var(--white);
+    border: 2px solid var(--sec-color);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color:#1877f2; 
+}
+.contact .row .twitter-icon{
+    color: var(--white);
+    border: 2px solid var(--sec-color);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #1da1f2;
+}
+.contact .row .youtube-icon{
+    color: var(--white);
+    border: 2px solid var(--sec-color);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #ff0000;
+}
+.contact .row .google-icon{
+    color: var(--white);
+    border: 2px solid var(--sec-color);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #34a853;
+}
+/* end say-hello */
+.scroll-to-top{
+    display: none;
+}
+.sticky-navbar{
+    z-index: 99;
+    display: none;
+}
